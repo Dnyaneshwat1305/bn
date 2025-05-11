@@ -195,4 +195,9 @@
     .how-it-works {
         gap: 0;
     }
+
+    .modal-body {
+
+    padding: 10px;
+}
 }
