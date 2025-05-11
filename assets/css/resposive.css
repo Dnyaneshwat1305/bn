@@ -197,7 +197,33 @@
     }
 
     .modal-body {
+        padding: 10px;
+    }
 
-    padding: 10px;
-}
+    .category_select_section {
+        width: 300px;
+    }
+
+    .category_select_section .container {
+        padding: 15px 0px 0 0;
+        margin: 10px;
+    }
+
+    .category-image-option {
+        width: 120px;
+        height: 100px;
+        margin: 5px;
+    }
+
+    .category-select {
+        margin-bottom: 0;
+    }
+
+    .category-select .form-label {
+        margin-bottom: 0;
+    }
+
+    .category-image-option {
+        width: 125px;
+    }
 }
