@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/images/brand_faviicon.png">
+  <title>Free Local Classifieds | Buy and Sell Anything - BuyerNear</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/resposive.css">
+</head>
+
+<body>
+
+  <!-- 0.1 header section start  -->
+
+  <section class="header_section">
+    <div class="navigation_section">
+      <div class="container">
+        <div class="navigation_section_content">
+          <div class="brand_logo">
+            <img src="./assets/images/brandlogo.png" alt="">
+          </div>
+          <div class="serch_box">
+            <input class="location" type="text" placeholder="Location">
+            <input class="content" type="text" placeholder="Search" id="searchInput">
+            <button class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="post_btn">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"> <i
+                class="fa-solid fa-user"></i><span>Login</span></a>
+            <a class="post_btn_link" href="./listpage.html">List Your Ad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mobile_header">
+
+
+    </section>
+    <div class="mobile_search_box">
+      <div class="mobile_search_box_input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text">
+      </div>
+      <div class="login_btn">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"> <i
+            class="fa-solid fa-user"></i><span>Login</span></a>
+      </div>
+    </div>
+    <div class="all_categories_box">
+      <div class="container">
+        <ul class="all_categories">
+          <li><a href="#">Mobiles & Tablets</a></li>
+          <li><a href="#">Used Cars & Bikes</a></li>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Electronics & Appliances</a></li>
+          <li><a href="#">Furniture & Home Decor</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Matrimonial</a></li>
+          <li><a href="#">Education & Coaching</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- 0.1 header section End  -->
+
+  <!-- <section class="google_add">
+    <div class="container">
+      <img src="./assets/images/brand_icon.png" alt="">
+    </div> -->
+
+  </section>
+
+  <!-- 0.2 all_card_section start -->
+  <section class="all_card_section">
+    <div class="container">
+      <h1>Latest Highlights</h1>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Swift 1 -->
+              <img src="./assets/images/product_img.jpg" class="d-block w-100" alt="Swift 1">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Hatchback</div>
+              <div class="title fw-bold">Maruti Swift ZXI</div>
+              <div class="location">Mumbai, Maharashtra</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹4,20,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Honda City -->
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Honda City -->
+              <img src="./assets/images/product_img.jpg" class="d-block w-100" alt="City 1">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Sedan</div>
+              <div class="title fw-bold">Honda City ZX</div>
+              <div class="location">Ahmedabad, Gujarat</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹9,30,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Tata Nexon -->
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Tata Nexon -->
+              <img src="./assets/images/product_img.jpg" class="d-block w-100" alt="Nexon 1">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Compact SUV</div>
+              <div class="title fw-bold">Tata Nexon XZ+</div>
+              <div class="location">Bangalore, Karnataka</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹10,50,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adding more Tata Nexon cards -->
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Tata Nexon -->
+              <img src="./assets/images/image.jpg" class="d-block w-100" alt="Nexon 2">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Compact SUV</div>
+              <div class="title fw-bold">Tata Nexon XZ+</div>
+              <div class="location">Bangalore, Karnataka</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹10,50,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Tata Nexon -->
+              <img src="./assets/images/image.jpg" class="d-block w-100" alt="Nexon 2">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Compact SUV</div>
+              <div class="title fw-bold">Tata Nexon XZ+</div>
+              <div class="location">Bangalore, Karnataka</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹10,50,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 card_container">
+          <div class="card">
+            <div class="image-container position-relative">
+              <!-- Static Image for Tata Nexon -->
+              <img src="./assets/images/image.jpg" class="d-block w-100" alt="Nexon 2">
+              <span class="featured-badge position-absolute top-0 start-0 bg-danger text-white p-1">FEATURED</span>
+            </div>
+            <div class="card-content p-2">
+              <div class="category text-muted">Vehicles / Compact SUV</div>
+              <div class="title fw-bold">Tata Nexon XZ+</div>
+              <div class="location">Bangalore, Karnataka</div>
+              <div class="bottom-row mt-2">
+                <div class="price fw-bold text-success">₹10,50,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+  <!-- 0.2 all_card_section End -->
+
+  <section class="how-it-works">
+    <div class="steps">
+      <h2>How it works?</h2>
+      <p class="subtitle">4 EASY STEPS TO GO</p>
+
+      <div class="step">
+        <div class="icon" data-step="1">👤</div>
+        <div class="step-content">
+          <h4>Register Free</h4>
+          <p>Sign up quickly and start using the website for free.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon" data-step="2">🖋️</div>
+        <div class="step-content">
+          <h4>Create Ad</h4>
+          <p>Add your item details and post your ad easily.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon" data-step="3">📣</div>
+        <div class="step-content">
+          <h4>Get Offers</h4>
+          <p>People will see your ad and send you offers.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="icon" data-step="4">👍</div>
+        <div class="step-content">
+          <h4>Sell It</h4>
+          <p>Choose the best offer and sell your item fast.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mockup">
+      <img src="./assets/images/mockup.jpg" alt="Smartphone Mockup" />
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>Buyer<span>Near</span></h2>
+        <p>Connecting buyers and sellers around you with trust.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Post Ad</a></li>
+          <li><a href="#">Browse Ads</a></li>
+          <li><a href="#">Login / Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Popular Cities</h3>
+        <ul>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Delhi</a></li>
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Ahmedabad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 BuyerNear. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login Form -->
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-login">Login</button>
+          </form>
+
+          <!-- Forgot Password and Register Links -->
+          <div class="additional-links">
+            <a href="#" class="forgot-password-link">Forgot Password?</a>
+            <button type="button" class="register-btn" data-bs-toggle="modal"
+              data-bs-target="#registerModal">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Create an Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Register Form -->
+          <form>
+            <div class="mb-3">
+              <label for="registerUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="registerUsername" placeholder="Choose a username">
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Choose a password">
+            </div>
+            <div class="mb-3">
+              <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="registerConfirmPassword"
+                placeholder="Confirm your password">
+            </div>
+            <button type="submit" class="btn btn-login">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/scricpt.js"></script>
+</body>
+
+</html>

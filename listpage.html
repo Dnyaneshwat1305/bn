@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resposive.css">
+    <link rel="stylesheet" href="./assets/css/listingpage.css">
+
+
+</head>
+
+<body>
+    <div class="category_select_section">
+        <div class="container">
+            <div class="category-select">
+                <label class="form-label"><i class="fas fa-list me-2"></i> Choose a Category</label><br>
+                <div id="categoryImages">
+                    <div class="category-image-option" data-category="Furniture">
+                        <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg" alt="Furniture">
+                        <span>Furniture</span>
+                    </div>
+                    <div class="category-image-option" data-category="Jobs">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Jobs">
+                        <span>Jobs</span>
+                    </div>
+                    <div class="category-image-option" data-category="Mobiles">
+                        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg" alt="Mobiles">
+                        <span>Mobiles</span>
+                    </div>
+                    <div class="category-image-option" data-category="Electronics & Appliances">
+                        <img src="https://images.pexels.com/photos/30536511/pexels-photo-30536511/free-photo-of-small-electronics-storefront-with-various-appliances.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Electronics & Appliances">
+                        <span>Electronics & Appliances</span>
+                    </div>
+                    <div class="category-image-option" data-category="Cars">
+                        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Cars">
+                        <span>Cars</span>
+                    </div>
+                    <div class="category-image-option" data-category="Bikes">
+                        <img src="https://images.pexels.com/photos/5415680/pexels-photo-5415680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Bikes">
+                        <span>Bikes</span>
+                    </div>
+                    <div class="category-image-option" data-category="Property">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Property">
+                        <span>Property</span>
+                    </div>
+                    <div class="category-image-option" data-category="Fashion">
+                        <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Fashion">
+                        <span>Fashion</span>
+                    </div>
+                    <div class="category-image-option" data-category="Kids & Toys">
+                        <img src="https://images.pexels.com/photos/7269673/pexels-photo-7269673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Kids & Toys">
+                        <span>Kids & Toys</span>
+                    </div>
+                    <div class="category-image-option" data-category="Services">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Services">
+                        <span>Services</span>
+                    </div>
+                    <div class="category-image-option" data-category="Agriculture">
+                        <img src="https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Agriculture">
+                        <span>Agriculture</span>
+                    </div>
+                </div>
+
+                <div id="subcategories-Furniture" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Furniture)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Sofa">Sofa</div>
+                        <div class="subcategory-option" data-subcategory="Table">Table</div>
+                        <div class="subcategory-option" data-subcategory="Chair">Chair</div>
+                        <div class="subcategory-option" data-subcategory="Bed">Bed</div>
+                        <div class="subcategory-option" data-subcategory="Cabinet">Cabinet</div>
+                        <div class="subcategory-option" data-subcategory="Dining Table">Dining Table</div>
+                        <div class="subcategory-option" data-subcategory="Wardrobe">Wardrobe</div>
+                        <div class="subcategory-option" data-subcategory="TV Unit">TV Unit</div>
+                        <div class="subcategory-option" data-subcategory="Bookshelf">Bookshelf</div>
+                        <div class="subcategory-option" data-subcategory="Study Table">Study Table</div>
+                        <div class="subcategory-option" data-subcategory="Dressing Table">Dressing Table</div>
+                        <div class="subcategory-option" data-subcategory="Office Chair">Office Chair</div>
+                        <div class="subcategory-option" data-subcategory="Office Table">Office Table</div>
+                        <div class="subcategory-option" data-subcategory="Recliner">Recliner</div>
+                        <div class="subcategory-option" data-subcategory="Stool">Stool</div>
+                        <div class="subcategory-option" data-subcategory="Bean Bag">Bean Bag</div>
+                        <div class="subcategory-option" data-subcategory="Shoe Rack">Shoe Rack</div>
+                        <div class="subcategory-option" data-subcategory="Bar Cabinet">Bar Cabinet</div>
+                        <div class="subcategory-option" data-subcategory="Cradle">Cradle</div>
+                        <div class="subcategory-option" data-subcategory="Outdoor Furniture">Outdoor Furniture</div>
+                    </div>
+
+                </div>
+
+                <div id="subcategories-Jobs" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Jobs)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Data Entry & Back Office">Data Entry & Back
+                            Office
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Sales & Marketing">Sales & Marketing</div>
+                        <div class="subcategory-option" data-subcategory="BPO & Telecaller">BPO & Telecaller</div>
+                        <div class="subcategory-option" data-subcategory="Driver">Driver</div>
+                        <div class="subcategory-option" data-subcategory="HR">HR</div>
+                        <div class="subcategory-option" data-subcategory="IT & Software">IT & Software</div>
+                        <div class="subcategory-option" data-subcategory="Finance & Accounts">Finance & Accounts</div>
+                        <div class="subcategory-option" data-subcategory="Teaching">Teaching</div>
+                        <div class="subcategory-option" data-subcategory="Receptionist & Front Office">Receptionist &
+                            Front
+                            Office</div>
+                        <div class="subcategory-option" data-subcategory="Delivery & Collection">Delivery & Collection
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Cook & Hotel Staff">Cook & Hotel Staff</div>
+                        <div class="subcategory-option" data-subcategory="Security">Security</div>
+                        <div class="subcategory-option" data-subcategory="Housekeeping">Housekeeping</div>
+                        <div class="subcategory-option" data-subcategory="Mechanic & Technician">Mechanic & Technician
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Medical & Health">Medical & Health</div>
+                        <div class="subcategory-option" data-subcategory="Beautician & Spa">Beautician & Spa</div>
+                        <div class="subcategory-option" data-subcategory="Construction & Labor">Construction & Labor
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Other Jobs">Other Jobs</div>
+                    </div>
+
+                </div>
+
+                <div id="subcategories-Mobiles" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Mobiles)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Smartphones">Smartphones</div>
+                        <div class="subcategory-option" data-subcategory="Feature Phones">Feature Phones</div>
+                        <div class="subcategory-option" data-subcategory="Accessories">Accessories</div>
+                        <div class="subcategory-option" data-subcategory="Tablets">Tablets</div>
+                        <div class="subcategory-option" data-subcategory="Power Banks">Power Banks</div>
+                        <div class="subcategory-option" data-subcategory="Smart Watches">Smart Watches</div>
+                        <div class="subcategory-option" data-subcategory="Bluetooth Headphones">Bluetooth Headphones
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Earphones">Earphones</div>
+                        <div class="subcategory-option" data-subcategory="Memory Cards">Memory Cards</div>
+                        <div class="subcategory-option" data-subcategory="Mobile Batteries">Mobile Batteries</div>
+                        <div class="subcategory-option" data-subcategory="Used Mobiles">Used Mobiles</div>
+                        <div class="subcategory-option" data-subcategory="Refurbished Mobiles">Refurbished Mobiles</div>
+                    </div>
+
+                </div>
+
+                <div id="subcategories-Electronics & Appliances" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory (Electronics
+                        &
+                        Appliances)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="TVs, Video - Audio">TVs, Video - Audio</div>
+                        <div class="subcategory-option" data-subcategory="Kitchen & Other Appliances">Kitchen & Other
+                            Appliances</div>
+                        <div class="subcategory-option" data-subcategory="Computers & Laptops">Computers & Laptops</div>
+                        <div class="subcategory-option" data-subcategory="Cameras & Lenses">Cameras & Lenses</div>
+                        <div class="subcategory-option" data-subcategory="Games & Entertainment">Games & Entertainment
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Fridges">Fridges</div>
+                        <div class="subcategory-option" data-subcategory="Computer Accessories">Computer Accessories
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Hard Disks, Printers & Monitors">Hard Disks,
+                            Printers & Monitors</div>
+                        <div class="subcategory-option" data-subcategory="ACs">ACs</div>
+                        <div class="subcategory-option" data-subcategory="Washing Machines">Washing Machines</div>
+                    </div>
+
+
+                </div>
+
+                <div id="subcategories-Cars" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Cars)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Hatchback">Hatchback</div>
+                        <div class="subcategory-option" data-subcategory="Sedan">Sedan</div>
+                        <div class="subcategory-option" data-subcategory="SUV">SUV</div>
+                        <div class="subcategory-option" data-subcategory="Luxury">Luxury</div>
+                        <div class="subcategory-option" data-subcategory="UsedCars">Used Cars</div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Bikes" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Bikes)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Motorcycles">Motorcycles</div>
+                        <div class="subcategory-option" data-subcategory="Scooters">Scooters</div>
+                        <div class="subcategory-option" data-subcategory="Bicycles">Bicycles</div>
+                        <div class="subcategory-option" data-subcategory="ElectricBikes">Electric Bikes</div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Property" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Property)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Flats for Sale">Flats for Sale</div>
+                        <div class="subcategory-option" data-subcategory="Houses for Sale">Houses for Sale</div>
+                        <div class="subcategory-option" data-subcategory="Plots & Land">Plots & Land</div>
+                        <div class="subcategory-option" data-subcategory="Commercial Property for Sale">Commercial
+                            Property
+                            for Sale</div>
+                        <div class="subcategory-option" data-subcategory="Flats for Rent">Flats for Rent</div>
+                        <div class="subcategory-option" data-subcategory="Houses for Rent">Houses for Rent</div>
+                        <div class="subcategory-option" data-subcategory="PG & Roommates">PG & Roommates</div>
+                        <div class="subcategory-option" data-subcategory="Commercial Property for Rent">Commercial
+                            Property
+                            for Rent</div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Fashion" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Fashion)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Sarees">Sarees</div>
+                        <div class="subcategory-option" data-subcategory="Kurtis & Suits">Kurtis & Suits</div>
+                        <div class="subcategory-option" data-subcategory="Western Wear">Western Wear</div>
+                        <div class="subcategory-option" data-subcategory="Footwear (Women)">Footwear (Women)</div>
+                        <div class="subcategory-option" data-subcategory="Handbags & Clutches">Handbags & Clutches</div>
+
+                        <div class="subcategory-option" data-subcategory="Shirts">Shirts</div>
+                        <div class="subcategory-option" data-subcategory="T-Shirts">T-Shirts</div>
+                        <div class="subcategory-option" data-subcategory="Jeans & Trousers">Jeans & Trousers</div>
+                        <div class="subcategory-option" data-subcategory="Footwear (Men)">Footwear (Men)</div>
+                        <div class="subcategory-option" data-subcategory="Watches">Watches</div>
+
+                        <div class="subcategory-option" data-subcategory="Boys Clothing">Boys Clothing</div>
+                        <div class="subcategory-option" data-subcategory="Girls Clothing">Girls Clothing</div>
+                        <div class="subcategory-option" data-subcategory="Kids Footwear">Kids Footwear</div>
+                        <div class="subcategory-option" data-subcategory="Accessories for Kids">Accessories for Kids
+                        </div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Kids & Toys" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory (Kids &
+                        Toys)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Soft Toys">Soft Toys</div>
+                        <div class="subcategory-option" data-subcategory="Educational Toys">Educational Toys</div>
+                        <div class="subcategory-option" data-subcategory="Remote Control Toys">Remote Control Toys</div>
+                        <div class="subcategory-option" data-subcategory="Action Figures & Dolls">Action Figures & Dolls
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Musical Toys">Musical Toys</div>
+                        <div class="subcategory-option" data-subcategory="Building Blocks & Puzzles">Building Blocks &
+                            Puzzles</div>
+                        <div class="subcategory-option" data-subcategory="Strollers & Walkers">Strollers & Walkers</div>
+                        <div class="subcategory-option" data-subcategory="Baby Carriers">Baby Carriers</div>
+                        <div class="subcategory-option" data-subcategory="Baby Furniture">Baby Furniture</div>
+                        <div class="subcategory-option" data-subcategory="Feeding & Nursing">Feeding & Nursing</div>
+                        <div class="subcategory-option" data-subcategory="Bath & Skincare">Bath & Skincare</div>
+                        <div class="subcategory-option" data-subcategory="Kids Bedding">Kids Bedding</div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Services" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Services)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Electricians">Electricians</div>
+                        <div class="subcategory-option" data-subcategory="Plumbers">Plumbers</div>
+                        <div class="subcategory-option" data-subcategory="Carpenters">Carpenters</div>
+                        <div class="subcategory-option" data-subcategory="Home Cleaning">Home Cleaning</div>
+                        <div class="subcategory-option" data-subcategory="Pest Control">Pest Control</div>
+
+                        <div class="subcategory-option" data-subcategory="Computer Repair">Computer Repair</div>
+                        <div class="subcategory-option" data-subcategory="Mobile Repair">Mobile Repair</div>
+                        <div class="subcategory-option" data-subcategory="Web Design & Development">Web Design &
+                            Development
+                        </div>
+                        <div class="subcategory-option" data-subcategory="CCTV Installation">CCTV Installation</div>
+                        <div class="subcategory-option" data-subcategory="Packers & Movers">Packers & Movers</div>
+                        <div class="subcategory-option" data-subcategory="Courier Services">Courier Services</div>
+                        <div class="subcategory-option" data-subcategory="Transport Services">Transport Services</div>
+                        <div class="subcategory-option" data-subcategory="Tutors & Coaching">Tutors & Coaching</div>
+                        <div class="subcategory-option" data-subcategory="Computer Classes">Computer Classes</div>
+                        <div class="subcategory-option" data-subcategory="Language Classes">Language Classes</div>
+                        <div class="subcategory-option" data-subcategory="Skill Development Courses">Skill Development
+                            Courses</div>
+                        <div class="subcategory-option" data-subcategory="Wedding Planners">Wedding Planners</div>
+                        <div class="subcategory-option" data-subcategory="Photographers">Photographers</div>
+                        <div class="subcategory-option" data-subcategory="Catering Services">Catering Services</div>
+                        <div class="subcategory-option" data-subcategory="DJ & Entertainment">DJ & Entertainment</div>
+                    </div>
+                </div>
+
+                <div id="subcategories-Agriculture" class="subcategories-container">
+                    <label class="form-label"><i class="fas fa-folder-open me-2"></i> Choose a Subcategory
+                        (Agriculture)</label><br>
+                    <div class="subcategory-options">
+                        <div class="subcategory-option" data-subcategory="Tractors">Tractors</div>
+                        <div class="subcategory-option" data-subcategory="Harvesters">Harvesters</div>
+                        <div class="subcategory-option" data-subcategory="Power Tillers">Power Tillers</div>
+                        <div class="subcategory-option" data-subcategory="Sprayers & Tools">Sprayers & Tools</div>
+                        <div class="subcategory-option" data-subcategory="Irrigation Equipment">Irrigation Equipment
+                        </div>
+
+                        <div class="subcategory-option" data-subcategory="Seeds">Seeds</div>
+                        <div class="subcategory-option" data-subcategory="Fertilizers & Pesticides">Fertilizers &
+                            Pesticides
+                        </div>
+                        <div class="subcategory-option" data-subcategory="Organic Products">Organic Products</div>
+                        <div class="subcategory-option" data-subcategory="Grains & Crops">Grains & Crops</div>
+                        <div class="subcategory-option" data-subcategory="Poultry">Poultry</div>
+                        <div class="subcategory-option" data-subcategory="Milk & Dairy Products">Milk & Dairy Products
+                        </div>
+
+                        <div class="subcategory-option" data-subcategory="Land Preparation Services">Land Preparation
+                            Services</div>
+                        <div class="subcategory-option" data-subcategory="Crop Consultation">Crop Consultation</div>
+                        <div class="subcategory-option" data-subcategory="Farm Labour Services">Farm Labour Services
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" id="selectedCategory" name="selectedCategory">
+                <input type="hidden" id="selectedSubcategory" name="selectedSubcategory">
+            </div>
+
+            <button id="backToCategory" class="btn btn-outline-secondary mb-3" style="display: none;">
+                <i class="fas fa-arrow-left me-2"></i> Back to Categories
+            </button>
+
+            <form id="adForm" class="rest-of-form">
+                <div class="form-group">
+                    <label for="adTitle" class="form-label"><i class="fas fa-heading me-2"></i> Ad Title</label>
+                    <input type="text" class="form-control" id="adTitle" placeholder="Enter the title of your ad">
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="form-label"><i class="fas fa-file-alt me-2"></i> Description</label>
+                    <textarea class="form-control" id="description" rows="4"
+                        placeholder="Write a short description about your ad"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="price" class="form-label"><i class="fas fa-rupee-sign me-2"></i> Price (₹)</label>
+                    <input type="number" class="form-control" id="price" placeholder="Enter the price">
+                </div>
+
+                <div class="form-group">
+                    <label for="location" class="form-label"><i class="fas fa-map-marker-alt me-2"></i> Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                </div>
+
+                <div class="upload-container">
+                    <label for="uploadImages" class="file-input-label"><i class="fas fa-upload me-2"></i> Upload
+                        Images</label>
+                    <input type="file" id="uploadImages" class="file-input" multiple accept="image/*">
+                    <div class="file-list" id="fileList"></div>
+                    <div class="image-preview-container" id="imagePreviewContainer"></div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn-submit"><i class="fas fa-bullhorn me-2"></i> Post Your Ad</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>By posting your ad, you agree to our <a href="#">Terms & Conditions</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryImages = document.querySelectorAll('.category-image-option');
+            const subcategoryContainers = document.querySelectorAll('.subcategories-container');
+            const adForm = document.getElementById('adForm');
+            const backToCategoryButton = document.getElementById('backToCategory');
+            const selectedCategoryInput = document.getElementById('selectedCategory');
+            const selectedSubcategoryInput = document.getElementById('selectedSubcategory');
+            const subcategoryOptions = document.querySelectorAll('.subcategory-option');
+            const categorySelectDiv = document.querySelector('.category-select');
+
+
+            categoryImages.forEach(option => {
+                option.addEventListener('click', () => {
+                    categoryImages.forEach(opt => opt.classList.remove('active'));
+                    option.classList.add('active');
+                    selectedCategoryInput.value = option.dataset.category;
+
+                    // Hide main categories
+                    document.getElementById('categoryImages').style.display = 'none';
+                    // Show relevant subcategories
+                    subcategoryContainers.forEach(container => {
+                        container.style.display = 'none'; // Hide all first
+                        if (container.id === `subcategories-${option.dataset.category}`) {
+                            container.style.display = 'block';
+                        }
+                    });
+
+                    backToCategoryButton.style.display = 'block';
+                    adForm.classList.remove('show'); // Hide the main form if it was visible
+                    selectedSubcategoryInput.value = ''; // Reset subcategory
+                    subcategoryOptions.forEach(opt => opt.classList.remove('active'));
+
+                });
+            });
+
+            subcategoryOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    subcategoryOptions.forEach(opt => opt.classList.remove('active'));
+                    option.classList.add('active');
+                    selectedSubcategoryInput.value = option.dataset.subcategory;
+                    adForm.classList.add('show');
+                });
+            });
+
+            backToCategoryButton.addEventListener('click', () => {
+                if (adForm.classList.contains('show')) {
+                    adForm.classList.remove('show');
+                    subcategoryContainers.forEach(container => container.style.display = 'none');
+                } else {
+                    subcategoryContainers.forEach(container => container.style.display = 'none');
+                    document.getElementById('categoryImages');
+                    categoryImages.forEach(opt => opt.classList.remove('active'));
+                    selectedCategoryInput.value = '';
+                }
+                backToCategoryButton.style.display = 'none';
+                selectedSubcategoryInput.value = '';
+                subcategoryOptions.forEach(opt => opt.classList.remove('active'));
+                document.getElementById('categoryImages').style.display = 'block';
+            });
+
+            document.getElementById('uploadImages').addEventListener('change', e => {
+                const files = Array.from(e.target.files);
+                document.getElementById('fileList').innerHTML = files.map(f => `<div>${f.name}</div>`).join('');
+                document.getElementById('imagePreviewContainer').innerHTML = files.filter(f => f.type.startsWith('image/')).map(f => {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        const preview = `<div class="image-preview"><img src="${event.target.result}" title="${f.name}"/><button class="remove-image-btn">Remove</button></div>`;
+                        document.getElementById('imagePreviewContainer').innerHTML += preview;
+                    };
+                    reader.readAsDataURL(f);
+                }).join('');
+            });
+
+            document.getElementById('adForm').addEventListener('submit', e => {
+                const category = selectedCategoryInput.value;
+                const subcategory = selectedSubcategoryInput.value;
+                if (category && subcategory) {
+                    const formData = new FormData(e.target);
+                    formData.append('category', category);
+                    formData.append('subcategory', subcategory);
+                    Array.from(document.getElementById('uploadImages').files).forEach(f => formData.append('images[]', f));
+                    console.log('Form Data:', ...formData.entries());
+                    alert(`Ad data prepared for category: ${category}, subcategory: ${subcategory}`);
+                } else {
+                    alert('Please select a category and a subcategory.');
+                }
+                e.preventDefault();
+            });
+            document.addEventListener('click', (event) => {
+                if (event.target.classList.contains('remove-image-btn')) {
+                    event.target.closest('.image-preview').remove();
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

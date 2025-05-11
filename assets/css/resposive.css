@@ -1,0 +1,198 @@
+@media screen and (max-width: 1300px) {
+    .all_categories li a {
+        text-wrap-mode: nowrap;
+    }
+
+    .all_categories {
+        gap: 30px;
+        overflow: scroll;
+    }
+
+    .serch_box {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .brand_logo img {
+        width: 120px;
+    }
+
+    .post_btn .post_btn_link {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .brand_logo img {
+        width: 120px;
+    }
+
+    .serch_box {
+        width: 486px;
+    }
+
+    .post_btn .post_btn_link {
+        padding: 11px 16px;
+    }
+
+    .serch_box {
+        width: 355px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .serch_box {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .serch_box {
+        display: none;
+    }
+
+    .brand_logo img {
+        width: 130px;
+    }
+
+    .navigation_section_content {
+        padding: 15px 0px;
+    }
+
+    .mobile_search_box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        background: #f5f5f5;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .post_btn a {
+        display: none;
+    }
+
+    .mobile_search_box .login_btn a i {
+        color: #FDB001;
+        font-size: 12px;
+    }
+
+    .mobile_search_box .login_btn a {
+        gap: 7px;
+        display: flex;
+        align-items: center;
+        color: #FDB001;
+    }
+
+    .mobile_search_box input {
+        border: 1px solid #0ead92;
+        padding: 4px 4px 4px 33px;
+        border-radius: 6px;
+        width: 230px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .mobile_search_box_input {
+        position: relative;
+    }
+
+    .mobile_search_box_input i {
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        color: #FDB001;
+    }
+
+    .all_card_section {
+        margin: 0 0 0 0;
+        padding: 20px 0 0 0;
+    }
+
+    .all_card_section h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card img {
+        height: 125px;
+        object-fit: contain;
+    }
+
+    .card {
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .location {
+        font-size: 10px;
+        text-wrap-mode: wrap;
+    }
+
+    .bottom-row {
+        margin-top: 8px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .featured-badge {
+
+        top: 8px !important;
+        left: 8px !important;
+        font-size: 9px;
+    }
+
+    .card {
+        border-radius: 0;
+    }
+
+    .category {
+        font-size: 10px;
+        color: #999;
+        margin-bottom: 4px;
+        text-wrap-mode: nowrap;
+    }
+
+    .card_container {
+        padding: 0 4px 0px 4px;
+    }
+
+    .how-it-works {
+        margin: 0 auto;
+    }
+
+    .steps h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .steps p.subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .step-content h4 {
+        font-size: 18px;
+    }
+
+    .step-content p {
+        font-size: 13px;
+    }
+
+    .step .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .how-it-works {
+        gap: 0;
+    }
+}
