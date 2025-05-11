@@ -23,7 +23,7 @@
         <div class="container">
             <div class="page_header_contain">
                 <div class="logo">
-                    <img src="./assets/images/brandlogo.png" alt="Brand_Logo">
+                    <a href="./index.html"><img src="./assets/images/brandlogo.png" alt="Brand_Logo"></a>
                 </div>
             </div>
 
@@ -36,6 +36,7 @@
     <section class="choose_category_section">
         <div class="container">
             <div class="choose_category_container">
+                <a href="./index.html"><i class="fa-solid fa-arrow-left choose_category_back"></i></a>
                 <h1 class="choose_category_container_title"><i class="fas fa-list me-2"></i> Choose a Category</h1>
             </div>
             <div id="categoryImages">
@@ -90,6 +91,30 @@
 
     <!-- choose category section -->
 
+    <section class="subcategory_category">
+        <div class="container">
+            <div class="subcategory_container">
+                <div class="subcategory">
+                    <div class="category-image-option" data-category="Furniture">
+                        <img src="./assets/images/Furniture.jpeg" alt="Furniture">
+                        <span>Furniture</span>
+                    </div>
+                    <div class="subcategory_list" data-category="Furniture">
+                        <ul class="" data-aut-id="subcategoryLevel" style="top: 342px; bottom: auto;">
+                            <li>Dining</li>
+                            <li>Wardrobes</li>
+                            <li>Garden</li>
+                            <li>Beds</li>
+                            <li>Kids Furniture</li>
+                            <li>Other Household Items</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <div class="footer-bottom category_page_footer ">
         © 2025 BuyerNear. All rights reserved.
     </div>
@@ -109,6 +134,28 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="./assets/js/scricpt.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryImageOptions = document.querySelectorAll('.category-image-option');
+      const chooseCategorySection = document.querySelector('.choose_category_section');
+      const subcategoryCategory = document.querySelector('.subcategory_category');
+
+      categoryImageOptions.forEach(option => {
+        option.addEventListener('click', function() {
+          if (chooseCategorySection) {
+            chooseCategorySection.style.display = 'none';
+          }
+          if (subcategoryCategory) {
+            subcategoryCategory.style.display = 'block';
+          }
+          // Agar aapko specific category ke subcategories dikhani hain,
+          // toh aap yahaan logic add kar sakte hain using 'this.dataset.category'.
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
